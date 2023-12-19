@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Park Information</title>
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <script src="./bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <style>
+        /* Reset some default styles */
+        body, h1, h2, p, ul, li {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Basic styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            color: rgb(83, 74, 74);
+            background-color: #000;
+        }
+        .video-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: -1;
+        }
+        video {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            filter: brightness(0.7); /* Adjust brightness for text visibility */
+        }
+        .content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            margin: 100px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+        header {
+            background-color: transparent;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Header styles */
+        h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        h2 {
+            font-size: 24px;
+            margin-top: 20px;
+            color: black;
+        }
+        p {
+            margin-top: 10px;
+            font-size: 16px;
+        }
+        .nav-link:hover{
+            border-bottom: 3px solid red;
+             display: inline;
+          }
+          .dropdown-item:hover{
+            border-bottom: 3px solid red;
+            display: inline;
+          }
+    </style>
+</head>
+<body>
+    <div class="video-container">
+        <video autoplay muted loop>
+            <source src="./production_id_3778979 (1080p).mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img class="image" src="./Red_and_Yellow_Flat_Theme_Park_Logo-removebg-preview.png" width="110px" height="80px" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" style="padding-left: 200px; "  id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" style="color: aliceblue; font-size: 25px;" aria-current="page" href="./about.html">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" style="color: aliceblue; font-size: 25px;" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Categories              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="dining.html"> Leisure And Dining</a></li>
+                <li><a class="dropdown-item" href="experience.html">Experience</a></li>
+                <li><a class="dropdown-item" href="parkcharacter.html">Park Character</a></li>
+                <li><a class="dropdown-item" href="Whats up.html">Whats Up</a></li>
+                <li><a class="dropdown-item" href="parkinformation.html">Park information</a></li>
+                <li><a class="dropdown-item" href="opportunity.html">Business opportunities</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" style="color: aliceblue; font-size: 25px;" aria-current="page" href=./contact.HTML>Contact us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="content">
+        <h2>About the Park</h2>
+        <p>This is a brief description of the park, including its location, size, and key features. You can provide information about its history, natural beauty, and recreational opportunities.</p>
+
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                A World of Thrills:
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Bahria Adventure Land boasts an impressive array of thrilling rides and attractions that cater to visitors of all ages. From heart-pounding roller coasters that defy gravity to gentle kiddie rides designed for the little ones, there's something here for everyone. The park's attention to safety ensures that you can enjoy these exhilarating experiences with peace of mind.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Iconic Roller Coasters:
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                One of the standout features of Bahria Adventure Land is its collection of roller coasters. Feel the rush of adrenaline as you zoom through loops, corkscrews, and unexpected twists and turns on rides like "The Thunderbolt" and "Sky Soarer." These iconic roller coasters promise an unforgettable experience for those brave enough to take on the challenge.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Family-Friendly Attractions:
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                For families with children, Bahria Adventure Land offers a wide range of family-friendly attractions. From merry-go-rounds and bumper cars to water rides and playgrounds, the park ensures that kids of all ages can have a blast. It's the perfect place for parents and children to bond and create lasting memories.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h2>Operating Hours</h2>
+        <p>The park is open year-round. The operating hours may vary by season, so please check the park's official website for the most up-to-date information.</p>
+
+        <h2>Contact Information</h2>
+        <address>
+            <p>Address: 123 Park Avenue, City, State ZIP</p>
+            <p>Phone: (555) 123-4567</p>
+            <p>Email: info@parkname.com</p>
+        </address>
+    </div>
+     <!-- Footer -->
+<footer class="bg-dark text-center text-white">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/" role="button"
+        ><i class="bi bi-facebook"></i></a>
+
+      <!-- Twitter -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D" role="button"
+        ><i class="bi bi-twitter"></i></a>
+
+      <!-- Google -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/accounts/login/" role="button"
+        ><i class="bi bi-instagram"></i></a>
+
+      <!-- Instagram -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.google.com/" role="button"
+        ><i class="bi bi-google"></i></a>
+
+      <!-- Linkedin -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/home" role="button"
+        ><i class="bi bi-linkedin"></i></a>
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Form -->
+    <section class="">
+      <form action="">
+        <!--Grid row-->
+        <div class="row d-flex justify-content-center">
+          <!--Grid column-->
+          <div class="col-auto">
+            <p class="pt-2">
+              <strong>Sign up for our newsletter</strong>
+            </p>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-md-5 col-12">
+            <!-- Email input -->
+            <div class="form-outline form-white mb-4">
+              <input type="email" id="form5Example21" class="form-control" />
+              <label class="form-label" for="form5Example21">Email address</label>
+            </div>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-auto">
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-outline-light mb-4">
+              Subscribe
+            </button>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </form>
+    </section>
+    <!-- Section: Form -->
+
+    <!-- Section: Text -->
+    <section class="mb-4">
+     
+    </section>
+    <!-- Section: Text -->
+
+    <!-- Section: Links -->
+    <section class="">
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+
+          <ul class="list-unstyled mb-0">
+   
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Links</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="index.html" class="text-white">  Home</a>
+            </li>
+            <li>
+              <a href="about.html" class="text-white">About</a>
+            </li>
+            <li>
+              <a href="contactus.html" class="text-white">Contact us</a>
+            </li>
+            <li>
+              <a href="dining.html" class="text-white">Leisure and Dining </a>
+            </li>
+            <li>
+              <a href="experience.html" class="text-white">Experience</a>
+            </li>
+            
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Links</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="parkcharacter.html" class="text-white">Park Character</a>
+            </li>
+            <li>
+              <a href="parkinformation.html" class="text-white">Park Information</a>
+            </li>
+            <li>
+              <a href="Whats up.html" class="text-white">Whats Up</a>
+            </li>
+            <li>
+              <a href="opportunity.html" class="text-white">Business Opportunity</a>
+            </li>
+          
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </section>
+    <!-- Section: Links -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    <img src="./Red_and_Yellow_Flat_Theme_Park_Logo-removebg-preview.png" width="100px" height="75px">
+    © 2023Copyright:
+    <a class="text-white" href="https://bahriaadventureland.com/">Funzone.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+      
+</body>
+</html>
